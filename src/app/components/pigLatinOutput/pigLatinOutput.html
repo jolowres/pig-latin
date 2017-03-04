@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-xs-6">
+        <h3>English phrase</h3>
+        <div ng-repeat="english in ctrl.englishPhraseList track by $index">
+            {{english}}
+        </div>
+    </div>
+    <div class="col-xs-6">
+        <h3>Pig latin phrase</h3>
+        <div ng-repeat="pigLatin in ctrl.pigLatinPhraseList track by $index">
+            {{pigLatin}}
+        </div>
+    </div>
+</div>

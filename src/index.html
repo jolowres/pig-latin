@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="scripts/css/bootstrap.min.css">
+    <link rel="stylesheet" href="app/css/pigLatin.css">
+
+    <!--<script src="scripts/js/jquery-3.1.1.min.js"></script>-->
+    <script src="scripts/js/angular.min.js"></script>
+    <script src="scripts/js/bootstrap.min.js"></script>
+
+    <script src="app/app.js"></script>
+
+    <!-- COMPONENTS -->
+    <script src="app/components/pigLatinInput/pigLatinInputComponent.js"></script>
+    <script src="app/components/pigLatinInput/pigLatinInputController.js"></script>
+    <script src="app/components/pigLatinOutput/pigLatinOutputComponent.js"></script>
+    <script src="app/components/pigLatinOutput/pigLatinOutputController.js"></script>
+
+    <!-- SERVICES -->
+    <script src="app/services/translator/translatorService.js"></script>
+</head>
+
+<body>
+    <div ng-app="pigLatinApp">
+        <div class="page-header pig-border">
+            <h1>Pig Latin Converter</h1>
+        </div>
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-xs-6">
+                    <pig-latin-input-component></pig-latin-input-component>
+                </div>
+                <div class="col-xs-6">
+                    <pig-latin-output-component></pig-latin-output-component>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
